@@ -10,10 +10,10 @@ int main()
    // led.period_ms(4000);         // 4 second period
    // led.write(0.50f);            // 50% duty cycle, relative to period
    
-   led.period_ms(10);         // 4 second period
+   led.period_ms(10);        
 	while (1) {
 		for (char i = 0; i < 100; i++) {
-			led.write(float(i / 100.0));            // 50% duty cycle, relative to period
+			led.write(float(i / 100.0));
 			ThisThread::sleep_for(100ms);
 		}
 	}
